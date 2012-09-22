@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E9171639160C29C90032AF58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9171638160C29C90032AF58 /* UIKit.framework */; };
+		E917163B160C29C90032AF58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E917163A160C29C90032AF58 /* Foundation.framework */; };
+		E917163D160C29C90032AF58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E917163C160C29C90032AF58 /* CoreGraphics.framework */; };
+		E9171643160C29C90032AF58 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E9171641160C29C90032AF58 /* InfoPlist.strings */; };
+		E9171645160C29C90032AF58 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E9171644160C29C90032AF58 /* main.m */; };
+		E9171649160C29C90032AF58 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E9171648160C29C90032AF58 /* AppDelegate.m */; };
+		E917164B160C29C90032AF58 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = E917164A160C29C90032AF58 /* Default.png */; };
+		E917164D160C29C90032AF58 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E917164C160C29C90032AF58 /* Default@2x.png */; };
+		E917164F160C29C90032AF58 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E917164E160C29C90032AF58 /* Default-568h@2x.png */; };
+		E9171656160C29F40032AF58 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9171655160C29F40032AF58 /* CoreLocation.framework */; };
+		E9171658160C29FE0032AF58 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9171657160C29FE0032AF58 /* MapKit.framework */; };
+		E98B606E160CB51900912AE2 /* Strings.strings in Resources */ = {isa = PBXBuildFile; fileRef = E98B6070160CB51900912AE2 /* Strings.strings */; };
+		E98B6074160CB57A00912AE2 /* MainTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98B6073160CB57A00912AE2 /* MainTabController.m */; };
+		E98B6077160CB75900912AE2 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98B6076160CB75900912AE2 /* ActivityViewController.m */; };
+		E98B607A160CB77500912AE2 /* WorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98B6079160CB77500912AE2 /* WorldViewController.m */; };
+		E98B607D160CB78600912AE2 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98B607C160CB78600912AE2 /* HomeViewController.m */; };
+		E98B6080160CB7A700912AE2 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98B607F160CB7A700912AE2 /* ChatViewController.m */; };
+		E98B6083160CB7D300912AE2 /* FriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E98B6082160CB7D300912AE2 /* FriendsViewController.m */; };
+		E98B6098160CCC8000912AE2 /* BaseTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = E98B6097160CCC8000912AE2 /* BaseTitleView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E9171634160C29C90032AF58 /* LBSGameDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LBSGameDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9171638160C29C90032AF58 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E917163A160C29C90032AF58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E917163C160C29C90032AF58 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E9171640160C29C90032AF58 /* LBSGameDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LBSGameDemo-Info.plist"; sourceTree = "<group>"; };
+		E9171642160C29C90032AF58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E9171644160C29C90032AF58 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E9171646160C29C90032AF58 /* LBSGameDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LBSGameDemo-Prefix.pch"; sourceTree = "<group>"; };
+		E9171647160C29C90032AF58 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E9171648160C29C90032AF58 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E917164A160C29C90032AF58 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		E917164C160C29C90032AF58 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		E917164E160C29C90032AF58 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		E9171655160C29F40032AF58 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E9171657160C29FE0032AF58 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E9171659160C2A0B0032AF58 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		E98B606F160CB51900912AE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Strings.strings; sourceTree = "<group>"; };
+		E98B6071160CB51A00912AE2 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Strings.strings"; sourceTree = "<group>"; };
+		E98B6072160CB57A00912AE2 /* MainTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainTabController.h; path = views/MainTabController.h; sourceTree = "<group>"; };
+		E98B6073160CB57A00912AE2 /* MainTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainTabController.m; path = views/MainTabController.m; sourceTree = "<group>"; };
+		E98B6075160CB75900912AE2 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityViewController.h; path = views/ActivityViewController.h; sourceTree = "<group>"; };
+		E98B6076160CB75900912AE2 /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityViewController.m; path = views/ActivityViewController.m; sourceTree = "<group>"; };
+		E98B6078160CB77500912AE2 /* WorldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WorldViewController.h; path = views/WorldViewController.h; sourceTree = "<group>"; };
+		E98B6079160CB77500912AE2 /* WorldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WorldViewController.m; path = views/WorldViewController.m; sourceTree = "<group>"; };
+		E98B607B160CB78600912AE2 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewController.h; path = views/HomeViewController.h; sourceTree = "<group>"; };
+		E98B607C160CB78600912AE2 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HomeViewController.m; path = views/HomeViewController.m; sourceTree = "<group>"; };
+		E98B607E160CB7A700912AE2 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = views/ChatViewController.h; sourceTree = "<group>"; };
+		E98B607F160CB7A700912AE2 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = views/ChatViewController.m; sourceTree = "<group>"; };
+		E98B6081160CB7D300912AE2 /* FriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendsViewController.h; path = views/FriendsViewController.h; sourceTree = "<group>"; };
+		E98B6082160CB7D300912AE2 /* FriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendsViewController.m; path = views/FriendsViewController.m; sourceTree = "<group>"; };
+		E98B6096160CCC8000912AE2 /* BaseTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BaseTitleView.h; path = views/BaseTitleView.h; sourceTree = "<group>"; };
+		E98B6097160CCC8000912AE2 /* BaseTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BaseTitleView.m; path = views/BaseTitleView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9171631160C29C90032AF58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9171658160C29FE0032AF58 /* MapKit.framework in Frameworks */,
+				E9171656160C29F40032AF58 /* CoreLocation.framework in Frameworks */,
+				E9171639160C29C90032AF58 /* UIKit.framework in Frameworks */,
+				E917163B160C29C90032AF58 /* Foundation.framework in Frameworks */,
+				E917163D160C29C90032AF58 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9171629160C29C90032AF58 = {
+			isa = PBXGroup;
+			children = (
+				E917163E160C29C90032AF58 /* LBSGameDemo */,
+				E9171637160C29C90032AF58 /* Frameworks */,
+				E9171635160C29C90032AF58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E9171635160C29C90032AF58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9171634160C29C90032AF58 /* LBSGameDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E9171637160C29C90032AF58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E9171657160C29FE0032AF58 /* MapKit.framework */,
+				E9171655160C29F40032AF58 /* CoreLocation.framework */,
+				E9171638160C29C90032AF58 /* UIKit.framework */,
+				E917163A160C29C90032AF58 /* Foundation.framework */,
+				E917163C160C29C90032AF58 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E917163E160C29C90032AF58 /* LBSGameDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E917165B160C2A390032AF58 /* Models */,
+				E917165A160C2A280032AF58 /* Views */,
+				E9171647160C29C90032AF58 /* AppDelegate.h */,
+				E9171648160C29C90032AF58 /* AppDelegate.m */,
+				E917163F160C29C90032AF58 /* Supporting Files */,
+			);
+			path = LBSGameDemo;
+			sourceTree = "<group>";
+		};
+		E917163F160C29C90032AF58 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9171640160C29C90032AF58 /* LBSGameDemo-Info.plist */,
+				E9171641160C29C90032AF58 /* InfoPlist.strings */,
+				E9171644160C29C90032AF58 /* main.m */,
+				E9171646160C29C90032AF58 /* LBSGameDemo-Prefix.pch */,
+				E917164A160C29C90032AF58 /* Default.png */,
+				E917164C160C29C90032AF58 /* Default@2x.png */,
+				E917164E160C29C90032AF58 /* Default-568h@2x.png */,
+				E98B6070160CB51900912AE2 /* Strings.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E917165A160C2A280032AF58 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E98B6072160CB57A00912AE2 /* MainTabController.h */,
+				E98B6073160CB57A00912AE2 /* MainTabController.m */,
+				E98B6075160CB75900912AE2 /* ActivityViewController.h */,
+				E98B6076160CB75900912AE2 /* ActivityViewController.m */,
+				E98B6078160CB77500912AE2 /* WorldViewController.h */,
+				E98B6079160CB77500912AE2 /* WorldViewController.m */,
+				E98B607B160CB78600912AE2 /* HomeViewController.h */,
+				E98B607C160CB78600912AE2 /* HomeViewController.m */,
+				E98B607E160CB7A700912AE2 /* ChatViewController.h */,
+				E98B607F160CB7A700912AE2 /* ChatViewController.m */,
+				E98B6081160CB7D300912AE2 /* FriendsViewController.h */,
+				E98B6082160CB7D300912AE2 /* FriendsViewController.m */,
+				E98B6096160CCC8000912AE2 /* BaseTitleView.h */,
+				E98B6097160CCC8000912AE2 /* BaseTitleView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		E917165B160C2A390032AF58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9171633160C29C90032AF58 /* LBSGameDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9171652160C29C90032AF58 /* Build configuration list for PBXNativeTarget "LBSGameDemo" */;
+			buildPhases = (
+				E9171630160C29C90032AF58 /* Sources */,
+				E9171631160C29C90032AF58 /* Frameworks */,
+				E9171632160C29C90032AF58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LBSGameDemo;
+			productName = LBSGameDemo;
+			productReference = E9171634160C29C90032AF58 /* LBSGameDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E917162B160C29C90032AF58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Sidney;
+			};
+			buildConfigurationList = E917162E160C29C90032AF58 /* Build configuration list for PBXProject "LBSGameDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+			);
+			mainGroup = E9171629160C29C90032AF58;
+			productRefGroup = E9171635160C29C90032AF58 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9171633160C29C90032AF58 /* LBSGameDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9171632160C29C90032AF58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9171643160C29C90032AF58 /* InfoPlist.strings in Resources */,
+				E917164B160C29C90032AF58 /* Default.png in Resources */,
+				E917164D160C29C90032AF58 /* Default@2x.png in Resources */,
+				E917164F160C29C90032AF58 /* Default-568h@2x.png in Resources */,
+				E98B606E160CB51900912AE2 /* Strings.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9171630160C29C90032AF58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9171645160C29C90032AF58 /* main.m in Sources */,
+				E9171649160C29C90032AF58 /* AppDelegate.m in Sources */,
+				E98B6074160CB57A00912AE2 /* MainTabController.m in Sources */,
+				E98B6077160CB75900912AE2 /* ActivityViewController.m in Sources */,
+				E98B607A160CB77500912AE2 /* WorldViewController.m in Sources */,
+				E98B607D160CB78600912AE2 /* HomeViewController.m in Sources */,
+				E98B6080160CB7A700912AE2 /* ChatViewController.m in Sources */,
+				E98B6083160CB7D300912AE2 /* FriendsViewController.m in Sources */,
+				E98B6098160CCC8000912AE2 /* BaseTitleView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E9171641160C29C90032AF58 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9171642160C29C90032AF58 /* en */,
+				E9171659160C2A0B0032AF58 /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E98B6070160CB51900912AE2 /* Strings.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E98B606F160CB51900912AE2 /* en */,
+				E98B6071160CB51A00912AE2 /* zh-Hans */,
+			);
+			name = Strings.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E9171650160C29C90032AF58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E9171651160C29C90032AF58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E9171653160C29C90032AF58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LBSGameDemo/LBSGameDemo-Prefix.pch";
+				INFOPLIST_FILE = "LBSGameDemo/LBSGameDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E9171654160C29C90032AF58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LBSGameDemo/LBSGameDemo-Prefix.pch";
+				INFOPLIST_FILE = "LBSGameDemo/LBSGameDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E917162E160C29C90032AF58 /* Build configuration list for PBXProject "LBSGameDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9171650160C29C90032AF58 /* Debug */,
+				E9171651160C29C90032AF58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9171652160C29C90032AF58 /* Build configuration list for PBXNativeTarget "LBSGameDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9171653160C29C90032AF58 /* Debug */,
+				E9171654160C29C90032AF58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E917162B160C29C90032AF58 /* Project object */;
+}

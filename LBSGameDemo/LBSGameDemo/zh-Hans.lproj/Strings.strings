@@ -1,0 +1,12 @@
+/* 
+  Strings.strings
+  LBSGameDemo
+
+  Created by Sidney on 12-9-21.
+  Copyright (c) 2012年 Sidney. All rights reserved.
+*/
+"ActivityViewTitle"="进行中";
+"WorldViewTitle"="地图";
+"HomeViewTitle"="家";
+"ChatViewTitle"="交谈";
+"FriendsViewTitle"="朋友";
