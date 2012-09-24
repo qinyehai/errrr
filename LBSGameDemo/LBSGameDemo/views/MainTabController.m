@@ -1,10 +1,10 @@
-//
-//  MainTabController.m
-//  LBSGameDemo
-//
-//  Created by Sidney on 12-9-21.
-//  Copyright (c) 2012年 Sidney. All rights reserved.
-//
+    //
+    //  MainTabController.m
+    //  LBSGameDemo
+    //
+    //  Created by Sidney on 12-9-21.
+    //  Copyright (c) 2012年 Sidney. All rights reserved.
+    //
 
 #import "MainTabController.h"
 
@@ -28,13 +28,14 @@
 
 @implementation MainTabController
 
+SYNTHESIZE_SINGLETON_FOR_CLASS(MainTabController)
+
 - (id)init
 {
     self = [super init];
     if (self) {
         self.viewControllers = self.viewControllerArray;
     }
-    
     return self;
 }
 
@@ -42,7 +43,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+            // Custom initialization
         self.viewControllers = self.viewControllerArray;
     }
     return self;
@@ -51,16 +52,23 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+        // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - views getter
+#pragma mark view switch control function
+
+- (void)chatToFriendByID:(NSNumber *)userId
+{
+    [self setSelectedIndex:1];
+}
+
+#pragma mark views getter
 
 - (ActivityViewController *) activityViewController
 {
@@ -92,7 +100,7 @@
 - (ChatViewController *) chatViewController
 {
     if (!_chatViewController) {
-        _chatViewController = [[ChatViewController alloc] init];
+        _chatViewController = [ChatViewController instance];
         _chatViewController.title = NSLocalizedStringFromTable(@"ChatViewTitle", @"Strings", nil);
     }
     return _chatViewController;

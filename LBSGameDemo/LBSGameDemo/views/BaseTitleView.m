@@ -16,6 +16,19 @@
     if (self) {
         self.frame = CGRectMake(0, 0, 320, 44);
         self.backgroundColor = [UIColor grayColor];
+        
+        UILabel *textView = [[UILabel alloc] init];
+            textView.frame = CGRectMake(0, 0, 100, 20);
+        
+        textView.text = @"asdfafd";
+
+//        textView.center = self.center;
+//        textView.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+        textView.textAlignment = NSTextAlignmentCenter;
+
+        
+        [self addSubview:textView];
+        
     }
     return self;
 }
@@ -37,7 +50,7 @@
 - (void)drawRect:(CGRect)rect
 {
     // Drawing code
-}
+};
 */
 
 @end

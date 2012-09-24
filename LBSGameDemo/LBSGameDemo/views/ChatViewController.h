@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+#import "SingletonMacro.h"
+
 @interface ChatViewController : UIViewController
+
+SYNTHESIZE_SINGLETON_FOR_CLASS_DECLARE(ChatViewController)
 
 @end

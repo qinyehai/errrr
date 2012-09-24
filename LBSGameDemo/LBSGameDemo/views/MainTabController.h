@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SingletonMacro.h"
 
 @interface MainTabController : UITabBarController
+
+SYNTHESIZE_SINGLETON_FOR_CLASS_DECLARE(MainTabController)
+
+- (void) chatToFriendByID:(NSNumber *)userId;
 
 @end

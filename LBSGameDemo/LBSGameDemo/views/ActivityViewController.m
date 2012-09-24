@@ -22,8 +22,7 @@
 {
     if (!_titleView) {
         _titleView = [[BaseTitleView alloc] init];
-        
-            }
+    }
     return _titleView;
 }
 

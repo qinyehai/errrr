@@ -8,31 +8,100 @@
 
 #import "ChatViewController.h"
 
+#import "ChatData.h"
+
+#pragma mark Data Container Class
+
+@interface ChatCacheData : NSObject
+
+@property (nonatomic) NSMutableDictionary *chatCaches;
+
+- (void)putID:(NSNumber *)userId content:(ChatData *)data;
+- (NSMutableArray *)getDatas:(NSNumber *)userId;
+
+@end
+
+@implementation ChatCacheData
+
+- (NSMutableDictionary *)chatCaches
+{
+    if (!_chatCaches) {
+        _chatCaches = [[NSMutableDictionary alloc] init];
+    }
+    return _chatCaches;
+}
+
+- (void)putID:(NSNumber *)userId content:(ChatData *)data
+{
+    NSMutableArray *chatCacheList = nil;
+    if ([[self.chatCaches allKeys] containsObject:userId]) {
+        chatCacheList = [self.chatCaches objectForKey:(userId)];
+    }
+    else {
+        chatCacheList = [[NSMutableArray alloc] init];
+        [self.chatCaches setObject:chatCacheList forKey:userId];
+    }
+    [chatCacheList addObject:data];
+}
+
+- (NSMutableArray *)getDatas:(NSNumber *)userId
+{
+    if ([[self.chatCaches allKeys] containsObject:userId]) {
+        return [self.chatCaches objectForKey:(userId)];
+    }
+    else {
+        return nil;
+    }
+}
+
+@end
+
+#pragma mark ChatViewController Class
+
 @interface ChatViewController ()
+
+@property (nonatomic) UILabel *noChatingHint;
+@property (nonatomic) BOOL isNoChating;
+@property (nonatomic) NSNumber *chatToUserId;
 
 @end
 
 @implementation ChatViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+SYNTHESIZE_SINGLETON_FOR_CLASS(ChatViewController)
+
+- (UILabel *)noChatingHint
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (!_noChatingHint) {
+        _noChatingHint = [[UILabel alloc] init];
+        _noChatingHint.frame = CGRectMake(0, 0, 320, 480 - 44);
+        _noChatingHint.text = NSLocalizedStringFromTable(@"NoChating", @"Strings", nil);
+        _noChatingHint.textAlignment = NSTextAlignmentCenter;
+    }
+    return _noChatingHint;
+}
+
+- (id)init
+{
+    self = [super init];
     if (self) {
-        // Custom initialization
+        _chatToUserId = nil;
     }
     return self;
 }
 
-- (void)viewDidLoad
+- (void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+    if (self.isNoChating) {
+        self.isNoChating = NO;
+        [self.noChatingHint removeFromSuperview];
+    }
+    else {
+        self.isNoChating = YES;
+        [self.view addSubview:self.noChatingHint];
+    }
+
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
