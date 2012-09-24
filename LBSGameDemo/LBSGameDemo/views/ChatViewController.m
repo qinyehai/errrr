@@ -74,9 +74,10 @@ SYNTHESIZE_SINGLETON_FOR_CLASS(ChatViewController)
 {
     if (!_noChatingHint) {
         _noChatingHint = [[UILabel alloc] init];
-        _noChatingHint.frame = CGRectMake(0, 0, 320, 480 - 44);
+        _noChatingHint.frame = CGRectMake(0, 0, 320, 480 - 48);
         _noChatingHint.text = NSLocalizedStringFromTable(@"NoChating", @"Strings", nil);
         _noChatingHint.textAlignment = NSTextAlignmentCenter;
+        _noChatingHint.backgroundColor = [UIColor blueColor];
     }
     return _noChatingHint;
 }
