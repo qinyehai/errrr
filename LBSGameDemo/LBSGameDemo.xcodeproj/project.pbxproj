@@ -29,6 +29,7 @@
 		E9E269AE16102E5200AC8F62 /* bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E269AC16102E5200AC8F62 /* bubble.png */; };
 		E9E269AF16102E5200AC8F62 /* bubbleSelf.png in Resources */ = {isa = PBXBuildFile; fileRef = E9E269AD16102E5200AC8F62 /* bubbleSelf.png */; };
 		E9E269B2161039F300AC8F62 /* ChatData.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E269B1161039F300AC8F62 /* ChatData.m */; };
+		E9E269B81610939900AC8F62 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = E9E269B71610939900AC8F62 /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,8 @@
 		E9E269B0161039F300AC8F62 /* ChatData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatData.h; path = models/ChatData.h; sourceTree = "<group>"; };
 		E9E269B1161039F300AC8F62 /* ChatData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatData.m; path = models/ChatData.m; sourceTree = "<group>"; };
 		E9E269B516106ED600AC8F62 /* SingletonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SingletonMacro.h; path = common/SingletonMacro.h; sourceTree = "<group>"; };
+		E9E269B61610939900AC8F62 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = User.h; path = models/User.h; sourceTree = "<group>"; };
+		E9E269B71610939900AC8F62 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = User.m; path = models/User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +174,8 @@
 			children = (
 				E9E269B0161039F300AC8F62 /* ChatData.h */,
 				E9E269B1161039F300AC8F62 /* ChatData.m */,
+				E9E269B61610939900AC8F62 /* User.h */,
+				E9E269B71610939900AC8F62 /* User.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 				E98B6083160CB7D300912AE2 /* FriendsViewController.m in Sources */,
 				E98B6098160CCC8000912AE2 /* BaseTitleView.m in Sources */,
 				E9E269B2161039F300AC8F62 /* ChatData.m in Sources */,
+				E9E269B81610939900AC8F62 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
